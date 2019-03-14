@@ -5,9 +5,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "outDir": "dist",
-    "lib": ["es6"]
+    "lib": ["es6"],
+    "sourceMap": true
   },
+  "include": [
+    "./src/*"
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }
